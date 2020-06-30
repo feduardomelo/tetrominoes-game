@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const startBtn = document.querySelector('#start-button')
     const pauseBtn = document.querySelector('#pause-button')
     const playBtn = document.querySelector('#playAgain')
+    const pEnd =  document.querySelector('#text-end')
     const width = 10
     let nextRandom = 0
     let timerId
@@ -238,20 +239,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+
     function gameOver() {
         if(current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
             
             clearInterval(timerId)
+
             document
                 .querySelector(".gameover")
                 .classList
                 .toggle("hide")
+               
+                pEnd.innerHTML ='Você perdeu o jogo! <br>Seu total de pontos foi:</br> ' +score
                 playBtn.addEventListener('click',() =>{
                     window.location.reload()
                 })
                 
-
-            
             
         }
     }

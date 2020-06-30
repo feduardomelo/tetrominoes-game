@@ -80,14 +80,19 @@ h3{
     
 }
 
-.gameover img {
+.gameover {
     position: absolute;
     top: 10%;
-    
+    background: rgb(187, 161, 161);
     height: 80%;
     width: 100%;
-    
     transition: opacity 0.5s;
+}
+.gameover h3{
+    text-align: center;
+    padding-top:15% ;
+    color: aliceblue;
+    
 }
 
 .gameover button {
