@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const scoreDisplay = document.querySelector('#score')
     const startBtn = document.querySelector('#start-button')
     const pauseBtn = document.querySelector('#pause-button')
+    const playBtn = document.querySelector('#playAgain')
     const width = 10
     let nextRandom = 0
     let timerId
@@ -241,7 +242,16 @@ document.addEventListener('DOMContentLoaded', () => {
         if(current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
             
             clearInterval(timerId)
-            window.alert('Game over! SCORE: ' + score)
+            document
+                .querySelector(".gameover")
+                .classList
+                .toggle("hide")
+                playBtn.addEventListener('click',() =>{
+                    window.location.reload()
+                })
+                
+
+            
             
         }
     }

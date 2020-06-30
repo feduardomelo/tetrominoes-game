@@ -64,6 +64,32 @@ h6{
 .container {
     display: flex;
 }
+
 h3{
     text-align: right;
 }
+
+.hide {
+    display: none;
+    
+}
+
+.gameover img {
+    position: absolute;
+    top: 10%;
+    
+    height: 80%;
+    width: 100%;
+    
+    transition: opacity 0.5s;
+}
+
+.gameover button {
+    z-index: 10;
+    position: absolute;
+    bottom: 10%;
+    margin-left: 45%;
+    overflow: visible;
+    height: 50px;
+}
+    
