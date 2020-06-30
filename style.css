@@ -6,6 +6,7 @@ div h1{
     color:black;
     width: auto;
     background-color: rgb(51, 141, 153);
+    padding-bottom: 20px;
     text-align: center;
     font-family: 'Krona One', sans-serif;
     font-family: 'Notable', sans-serif;
@@ -83,7 +84,7 @@ h3{
 .gameover {
     position: absolute;
     top: 10%;
-    background: rgb(187, 161, 161);
+    background: rgb(192, 180, 180);
     height: 80%;
     width: 100%;
     transition: opacity 0.5s;
