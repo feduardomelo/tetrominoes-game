@@ -1,17 +1,31 @@
+.text-center{
+    text-align: center;
+}
 div h1{
-    width: 100px;
-    background-color: red;
-    outline-style: double;
+   
+    color: red;
+    width: auto;
+    background-color: rebeccapurple;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+    font-family: 'Notable', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 h6{
     background-color: yellow;
-    width: 200px;
+
+}
+.btn{
+    padding: 10%;
 }
 
-body{
+.color{
     background: lightblue;
     
+}
+.container {
+    padding: 10px;
 }
 
 .grid{
@@ -49,4 +63,7 @@ body{
 
 .container {
     display: flex;
+}
+h3{
+    text-align: right;
 }

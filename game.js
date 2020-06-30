@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let squares = Array.from(document.querySelectorAll('.grid div'))
     const scoreDisplay = document.querySelector('#score')
     const startBtn = document.querySelector('#start-button')
+    const pauseBtn = document.querySelector('#pause-button')
     const width = 10
     let nextRandom = 0
     let timerId
@@ -198,14 +199,18 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-    startBtn.addEventListener('click', () => {
+    pauseBtn.addEventListener('click', () => {
         if(timerId) {
             clearInterval(timerId)
             timerId = null
-        } else {
+        } 
+    })
+
+    startBtn.addEventListener('click',() => {
+        if (!timerId){
             draw()
             timerId = setInterval(moveDown, 1000)
-            nextRandom = Math.floor(Math.random()*theTetrominos.length)
+            // nextRandom = Math.floor(Math.random()*theTetrominos.length)
             displayShape()
         }
     })
@@ -236,7 +241,11 @@ document.addEventListener('DOMContentLoaded', () => {
         if(current.some(index => squares[currentPosition + index].classList.contains('taken'))) {
             scoreDisplay.innerHTML = 'end'
             clearInterval(timerId)
+            window.alert('você perdeu')
+            
         }
     }
 
 })
+
+
