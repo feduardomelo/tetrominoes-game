@@ -4,5 +4,5 @@ Jogo inspirado no tutorial : https://github.com/kubowania/Tetris-Basic .
 Feito com intuito de entender mais sobre JavaScript, HTML E CSS
 
 #Jogue :
-Nesse link você pode jogar o Tetro :
+Nesse link você pode jogar o Tetro : https://optimistic-yalow-22c6be.netlify.app/
 
