@@ -1,6 +1,13 @@
 .text-center{
     text-align: center;
 }
+
+.text-center-footer{
+    text-align: center;
+    color: black;
+    font-size: medium;
+    padding-top: 30px;
+}
 div h1{
    
     color:black;
